@@ -201,13 +201,13 @@ ul.row {
 }
 
 .footer-address {
-  text-color: var(--text-color);
+  color: var(--text-color);
 }
 
 .social-link {
   display: block;
 }
 
-.social-link svg {
+.social-link > svg {
   text-color: var(--text-color);
 }
