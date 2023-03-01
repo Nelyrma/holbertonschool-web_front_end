@@ -324,9 +324,9 @@ ul.row {
 }
 
 .card-work .card-image img {
+  --object-fit: cover;
   height: 30rem;
   width: 100%;
-  --object-fit: var(--cover);
   vertical-align: bottom;
 }
 
