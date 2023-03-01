@@ -326,7 +326,7 @@ ul.row {
 .card-work .card-image img {
   height: 30rem;
   width: 100%;
-  --object-fit: cover;
+  --object-fit: var(--cover);
   vertical-align: bottom;
 }
 
@@ -357,12 +357,12 @@ ul.row {
 }
 
 .card-work .card-title a::after {
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  content = '';
 }
 
 .card-work:hover .card-title {
