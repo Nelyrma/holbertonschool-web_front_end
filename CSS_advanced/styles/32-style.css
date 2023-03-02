@@ -278,7 +278,7 @@ ul.row {
   background: var(--button-hover-background);
   transition: var(--transition-duration);
   transition-duration: var(--transition-duration);
-  transition-property: var(--background-color);
+  transition-property: background-color;
 }
 
 .card-testimonial {
@@ -342,6 +342,7 @@ ul.row {
 
 .card-work:hover .card-image {
   transition: var(--transition-duration) var(--transition-cubic-bezier);
+  transform: scale(1.2)
 }
 
 .card-work .card-inner {
