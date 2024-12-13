@@ -1,0 +1,10 @@
+/* assign values to HTML elements using nested classes*/
+$textColor: #3D3D3D;
+$textColorClass: #FF0000;
+
+body {
+    color: $textColor;
+    .red {
+        color: $textColorClass;
+    }
+}
