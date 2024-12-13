@@ -1,0 +1,10 @@
+/* assign a color to the button hover*/
+$textColor: #FF0000;
+$hoverColor: #00FF00;
+
+button {
+    color: $textColor;
+    :hover {
+        color: $hoverColor;
+    }
+}
