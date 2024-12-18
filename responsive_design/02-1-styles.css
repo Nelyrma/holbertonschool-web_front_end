@@ -167,6 +167,11 @@
   
   /* Helpers
       ============================= */
+
+  main img {
+    width: 100%;
+    height: auto;
+  }
   
   .visually-hidden:not(:focus):not(:active) {
     position: absolute !important;
@@ -175,11 +180,6 @@
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
     white-space: nowrap;
-  }
-
-  main img {
-    width: 100%;
-    height: auto;
   }
   
   /*** 2. LAYOUT ***/
@@ -218,19 +218,25 @@
     width: calc((100% / 2) - 2rem);
   }
 
-  @media(max-width: 767px) {
-    $section-padding: 5rem 1.5rem;
-    $section-body-padding: 2rem 0 0;
-    ul.row .row {
-        flex-direction:column;
-        margin: 0;
+  @media only screen and (max-width: 767px) {
+    :root {
+      --section-padding: 5rem 1.5rem;
+      --section-body-padding: 2rem 0 0;
     }
-    [class^="col-"] {
-        margin: 0 0 3rem 0;
+
+    ul.row, .row {
+      flex-direction: column;
+      margin: 0;
     }
-    .col-1-3 .col-1-2 {
-        width: 100%;
+
+    [class*='col-'] {
+      margin: 0 0 3rem 0;
     }
+
+    .col-1-3, .col-1-2 {
+      width: 100%;
+    }
+
   }
   
   /* Navbar
@@ -282,9 +288,9 @@
     width: 100%;
   }
 
-  @media(max-width: 767px) {
-    .navbar-menu{
-        display: none;
+  @media only screen and (max-width: 767px) {
+    .navbar-menu {
+      display: none;
     }
   }
   
@@ -426,9 +432,9 @@
     flex-direction: row-reverse;
   }
 
-  @media (max-width: 767px) {
+  @media only screen and (max-width: 767px) {
     .section-latest-news .row {
-        flex-direction: column;
+      flex-direction: column;
     }
   }
   
